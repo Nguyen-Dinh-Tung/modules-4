@@ -1,0 +1,6 @@
+<h3>Danh sách nhân viên</h3>
+<% arrStaff.forEach(function(e , index){ %>
+<p><%=e.name%></p>
+<p><%=e.age%></p>
+<a href="/delete&id=<%=index%>"><button>delete</button></a>
+<% }) %>
