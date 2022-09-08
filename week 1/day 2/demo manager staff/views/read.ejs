@@ -1,0 +1,9 @@
+<h3>Danh sách nhân viên</h3>
+<a href="/create"><button>Thêm mới</button></a>
+<% data.forEach((element,index)=>{ %>
+<p><%= element.name %></p>
+<p><%= element.age %></p>
+<p><%= element.position %></p>
+<a href="/delete?id=<%=element.id%>"><button>Xóa</button></a>
+<a href="/details?id=<%=element.id%>"><button>Chi tiết</button></a>
+<%}) %>
