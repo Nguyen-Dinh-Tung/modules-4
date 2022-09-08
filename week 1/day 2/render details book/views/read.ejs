@@ -1,0 +1,8 @@
+<h3>Tủ sách online</h3>
+<% data.forEach((element,index)=>{ %>
+<p><%= element.name %></p>
+<p><%= element.price %></p>
+<p><%= element.quantity %></p>
+<p><%= element.author %></p>
+<a href="/details?id=<%=index + 1%>"><button>Details</button></a>
+<%}) %>
