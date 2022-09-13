@@ -1,0 +1,9 @@
+<h3>Danh sách nhân viên</h3>
+<% data.forEach((element , index) =>{%>
+<h5><%= element.name%></h5>
+<p><%= element.phoneNumber%></p>
+<a href="/delete?id=<%= element.id%>"><button>Xóa</button></a>
+<a href="/edit?id=<%= element.id%>"><button>Sửa</button></a>
+<%})%>
+<br />
+<a href="/create"><button>Thêm số</button></a>
