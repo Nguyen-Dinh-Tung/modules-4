@@ -1,0 +1,11 @@
+<h3>Game Poke</h3>
+
+<% container.dataGame.forEach((element , index) =>{ %>
+<p><%= index+1%></p>
+<p>Tên : <%= element.name%></p>
+<p>Link :<%= element.url%></p>
+<%})%>
+<a
+  href="/next?limit=<%= container.next.limit +10%>&offset=<%=container.next.offset +10%>"
+  ><button>Next</button></a
+>
