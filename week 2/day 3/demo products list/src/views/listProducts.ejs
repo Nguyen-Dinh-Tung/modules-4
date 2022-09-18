@@ -1,7 +1,8 @@
 <h2>Danh sách sản phẩm</h2>
 
 <% data.forEach((element,index) =>{%>
-<p>Tên sản phẩm : element.name <%= %></p>
+<p>Tên sản phẩm : <%= element.name %></p>
 <p>Giá : <%=element.price %></p>
 <p>Nơi xản xuất : <%=element.author %></p>
 <%})%>
+<a href="/list?limit=<%=limit%>&offset=<%=offset+3%>"><button>Next</button></a>
