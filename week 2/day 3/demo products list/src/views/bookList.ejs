@@ -1,0 +1,7 @@
+<h2>Thư viện</h2>
+<% data.forEach((element,index) =>{ %>
+<p><%= index%></p>
+<p><%= element.description%></p>
+<a href="/book/edit?id=<%= element._id%>"><button>Sửa</button></a>
+<a href="/book/delete?id=<%= element._id%>"><button>Xóa</button></a>
+<%})%>
