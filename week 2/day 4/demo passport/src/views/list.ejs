@@ -1,0 +1,10 @@
+<h2>Danh sách nhân viên</h2>
+
+<% data.forEach((e)=>{%>
+<p><%=e.name%></p>
+<p><%=e.phone%></p>
+<a href="/delete?_id=<%= e._id%>"><button>Xóa</button></a>
+<a href="/edit?_id=<%=e._id%>"><button>Sửa</button></a>
+<%})%>
+<br />
+<a href="/create"><button>Tạo mới</button></a>
