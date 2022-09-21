@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Danh sách sản phẩm</h2>
+    <%data.forEach((element , index) =>{%>
+    <p>Tên sản phẩm : <%= element.name%></p>
+    <p>Giá sản phẩm : <%= element.price%></p>
+    <p>Xuất sứ : <%= element.author%></p>
+    <%})%>
+  </body>
+  <a href="/out"><button>Thoát</button></a>
+</html>
